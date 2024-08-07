@@ -1,2 +1,2 @@
-# web_crawling_glamira
+# glamira-webscraper
 crawl glamira website
