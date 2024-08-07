@@ -1,0 +1,245 @@
+2024-08-05 18:51:12 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: glamira_scraper)
+2024-08-05 18:51:12 [scrapy.utils.log] INFO: Versions: lxml 5.2.2.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.3.0, Python 3.9.13 (main, Aug 25 2022, 18:29:29) - [Clang 12.0.0 ], pyOpenSSL 24.2.1 (OpenSSL 3.3.1 4 Jun 2024), cryptography 43.0.0, Platform macOS-10.16-x86_64-i386-64bit
+2024-08-05 18:51:12 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-08-05 18:51:12 [py.warnings] WARNING: /Users/zhaohungtan/PycharmProjects/pythonProject/glamirawebscraping/lib/python3.9/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-08-05 18:51:12 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-08-05 18:51:12 [scrapy.extensions.telnet] INFO: Telnet Password: bf97c691bd8b0b05
+2024-08-05 18:51:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-08-05 18:51:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'glamira_scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'HTTPCACHE_ENABLED': True,
+ 'NEWSPIDER_MODULE': 'glamira_scraper.spiders',
+ 'RETRY_TIMES': 5,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['glamira_scraper.spiders']}
+2024-08-05 18:51:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2024-08-05 18:51:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-08-05 18:51:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-08-05 18:51:12 [scrapy.core.engine] INFO: Spider opened
+2024-08-05 18:51:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-08-05 18:51:12 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in /Users/zhaohungtan/PycharmProjects/pythonProject/glamirawebscraping/glamira_scraper/.scrapy/httpcache
+2024-08-05 18:51:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/robots.txt> (referer: None) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/> (referer: None) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/apple-watch-cases/> (referer: https://www.glamira.com/) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/> (referer: https://www.glamira.com/) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/bridal-set/> (referer: https://www.glamira.com/) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/collections/> (referer: https://www.glamira.com/) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/kids/> (referer: https://www.glamira.com/) ['cached']
+2024-08-05 18:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=2> (referer: https://www.glamira.com/men-ring/) ['cached']
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Grede-$1,347.00', 'Product Name': 'Bridal Set Grede', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181grede-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/stone3/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,347.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.138 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Glowing Beauty-$1,974.00', 'Product Name': 'Bridal Set Glowing Beauty', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/GD25-SET/diamond/lab-grown-diamond_AAA/alloycolour/red.jpg', 'Price': '$1,974.00', 'Description': '14K Rose Gold & Lab Grown Diamond', 'Carat': '0.935 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Ring Consecratedness SET-$1,357.00', 'Product Name': 'Ring Consecratedness SET', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/consecratednessset-r/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/yellow.jpg', 'Price': '$1,357.00', 'Description': '14K Yellow Gold & Lab Grown Diamond', 'Carat': '0.824 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Crinkly-$2,630.00', 'Product Name': 'Bridal Set Crinkly', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D27720-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$2,630.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '1.23 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Gemmiferous-$2,773.00', 'Product Name': 'Bridal Set Gemmiferous', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/gemmiferousv1-set/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/stone3/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$2,773.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '1.592 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Perfect Match-$1,277.00', 'Product Name': 'Bridal Set Perfect Match', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D31418-2-10-SET/diamond/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$1,277.00', 'Description': '14K White Gold & Diamond', 'Carat': '0.174 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Keyser-$903.00', 'Product Name': 'Bridal Set Keyser', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/keyser-set-r/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$903.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '0.135 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Syfig-$1,347.00', 'Product Name': 'Bridal Set Syfig', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181syfig-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/stone3/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,347.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.17 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Swanky-$3,553.00', 'Product Name': 'Bridal Set Swanky', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D27337-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$3,553.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '1.94 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Splendiferous-$3,850.00', 'Product Name': 'Bridal Set Splendiferous', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D27726-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$3,850.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '1.934 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set One Only-$1,655.00', 'Product Name': 'Bridal Set One Only', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D31418-6-10-SET/diamond/lab-grown-diamond_AAA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg', 'Price': '$1,655.00', 'Description': '14K White Gold & Lab Grown Diamond & White Sapphire', 'Carat': '0.54 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Fendr-$1,855.00', 'Product Name': 'Bridal Set Fendr', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181fendr-set/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/stone3/lab-grown-diamond_AAA/alloycolour/red.jpg', 'Price': '$1,855.00', 'Description': '14K Rose Gold & Lab Grown Diamond', 'Carat': '1.06 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Marvelous-$3,347.00', 'Product Name': 'Bridal Set Marvelous', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D29348-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/red.jpg', 'Price': '$3,347.00', 'Description': '14K Rose Gold & Lab Grown Diamond', 'Carat': '1.45 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Sumptuous-$2,781.00', 'Product Name': 'Bridal Set Sumptuous', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D30569-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/yellow.jpg', 'Price': '$2,781.00', 'Description': '14K Yellow Gold & Lab Grown Diamond', 'Carat': '1.288 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Blessing-$1,339.00', 'Product Name': 'Bridal Set Blessing', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181blessing-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/stone3/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,339.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.3 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Dreamy-$2,251.00', 'Product Name': 'Bridal Set Dreamy', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/GD22-SET/diamond/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$2,251.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '1.07 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Scump-$1,388.00', 'Product Name': 'Bridal Set Scump', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181scump-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/stone3/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,388.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.378 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Precious Moments-$1,669.00', 'Product Name': 'Bridal Set Precious Moments', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/GD19-SET/diamond/amethyst_AAA/alloycolour/white.jpg', 'Price': '$1,669.00', 'Description': '14K White Gold & Amethyst', 'Carat': '0.945 crt  - AAA', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Htingi-$1,682.00', 'Product Name': 'Bridal Set Htingi', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181htingi-set/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white_yellow.jpg', 'Price': '$1,682.00', 'Description': '14K White & Yellow Gold  & Lab Grown Diamond', 'Carat': '0.994 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set True Love-$1,438.00', 'Product Name': 'Bridal Set True Love', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/GD11-10-SET/diamond/lab-grown-diamond_AAA/alloycolour/yellow.jpg', 'Price': '$1,438.00', 'Description': '14K Yellow Gold & Lab Grown Diamond', 'Carat': '0.5 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Soulmates-$2,032.00', 'Product Name': 'Bridal Set Soulmates', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/d31418-4-10-set1/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$2,032.00', 'Description': '14K White Gold & Diamond', 'Carat': '0.338 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Heavenly Vows-$1,554.00', 'Product Name': 'Bridal Set Heavenly Vows', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/GD19-1-SET/diamond/ruby_AA/alloycolour/yellow.jpg', 'Price': '$1,554.00', 'Description': '14K Yellow Gold & Ruby', 'Carat': '0.5 crt  - AA', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Fashionable-$11,919.00', 'Product Name': 'Bridal Set Fashionable', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D29002-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$11,919.00', 'Description': '14K White Gold & Diamond', 'Carat': '1.809 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Graceful-$1,655.00', 'Product Name': 'Bridal Set Graceful', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/GD11-SET/diamond/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$1,655.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '0.755 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Bogd-$1,348.00', 'Product Name': 'Bridal Set Bogd', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181bogd-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,348.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.218 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Sinuous-$2,046.00', 'Product Name': 'Bridal Set Sinuous', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D29030-2-2-SET/diamond/amethyst_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$2,046.00', 'Description': '14K White Gold & Amethyst & Lab Grown Diamond', 'Carat': '1.957 crt  - AAA', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Grande-$10,911.00', 'Product Name': 'Bridal Set Grande', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D28679-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$10,911.00', 'Description': '14K White Gold & Diamond', 'Carat': '1.876 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Xoden-$1,057.00', 'Product Name': 'Bridal Set Xoden', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181xoden-set/diamond/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,057.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '0.65 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Flamboyant-$2,535.00', 'Product Name': 'Bridal Set Flamboyant', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D30572-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/red.jpg', 'Price': '$2,535.00', 'Description': '14K Rose Gold & Lab Grown Diamond', 'Carat': '1.001 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Blooming-$2,545.00', 'Product Name': 'Bridal Set Blooming', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D30571-2-2-SET/diamond/lab-grown-diamond_AAA/stone2/lab-grown-diamond_AAA/alloycolour/white.jpg', 'Price': '$2,545.00', 'Description': '14K White Gold & Lab Grown Diamond', 'Carat': '1.23 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Sweold-$1,390.00', 'Product Name': 'Bridal Set Sweold', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181sweold-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,390.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '0.792 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Soft Life-$2,636.00', 'Product Name': 'Bridal Set Soft Life', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D27820-2-2-SET/diamond/sapphire_AAA/stone2/diamond-sapphire_AAA/alloycolour/yellow.jpg', 'Price': '$2,636.00', 'Description': '14K Yellow Gold & Sapphire & White Sapphire', 'Carat': '1.468 crt  - AAA', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Polloc-$1,532.00', 'Product Name': 'Bridal Set Polloc', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181polloc-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,532.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '0.638 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Puffin-$5,832.00', 'Product Name': 'Bridal Set Puffin', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D29033-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$5,832.00', 'Description': '14K White Gold & Diamond', 'Carat': '1.12 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Elegance-$4,517.00', 'Product Name': 'Bridal Set Elegance', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D31696-2-1-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/yellow.jpg', 'Price': '$4,517.00', 'Description': '14K Yellow Gold & Diamond', 'Carat': '1.51 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Snazy-$3,642.00', 'Product Name': 'Bridal Set Snazy', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D29008-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$3,642.00', 'Description': '14K White Gold & Diamond', 'Carat': '0.77 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Oferih-$1,370.00', 'Product Name': 'Bridal Set Oferih', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181oferih-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,370.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.308 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Courteous-$4,731.00', 'Product Name': 'Bridal Set Courteous', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D33102-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/yellow.jpg', 'Price': '$4,731.00', 'Description': '14K Yellow Gold & Diamond', 'Carat': '0.915 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Clover-$11,701.00', 'Product Name': 'Bridal Set Clover', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D28964-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/yellow.jpg', 'Price': '$11,701.00', 'Description': '14K Yellow Gold & Diamond', 'Carat': '1.534 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Cuddly-$15,817.00', 'Product Name': 'Bridal Set Cuddly', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/D28976-2-2-SET/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/alloycolour/white.jpg', 'Price': '$15,817.00', 'Description': '14K White Gold & Diamond', 'Carat': '2.038 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Exquisite-$1,622.00', 'Product Name': 'Bridal Set Exquisite', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/OVAL5-1-SET/diamond/peridot_AAA/stone2/diamond-sapphire_AAA/alloycolour/white.jpg', 'Price': '$1,622.00', 'Description': '14K White Gold & Peridot & White Sapphire', 'Carat': '1.41 crt  - AAA', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Idan-$1,337.00', 'Product Name': 'Bridal Set Idan', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181idan-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,337.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '1.206 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Mannas-$1,487.00', 'Product Name': 'Bridal Set Mannas', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/13622mannas-set/diamond/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,487.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '0.762 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Niliev-$1,552.00', 'Product Name': 'Bridal Set Niliev', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181niliev-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,552.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '0.616 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/bridal-set/>
+{'PID': 'Bridal Set Fnel-$1,296.00', 'Product Name': 'Bridal Set Fnel', 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/14181fnel-set/diamond/labdiamond_AAAA/stone2/labdiamond_AAAA/alloycolour/yellow.jpg', 'Price': '$1,296.00', 'Description': '14K Yellow Gold & Moissanite', 'Carat': '0.938 crt  - VS', 'Category': 'bridal-set', 'URL': 'https://www.glamira.com/bridal-set/'}
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=3> (referer: https://www.glamira.com/men-ring/?p=2) ['cached']
+2024-08-05 18:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/men-ring/?p=3>
+{'PID': "Men's Wedding Ring Classic Spring 6 mm-$1,522.00", 'Product Name': "Men's Wedding Ring Classic Spring 6 mm", 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/classic-spring-men/alloycolour/white/width/w6/profile/prA.jpg', 'Price': '$1,522.00', 'Description': '14K White Gold', 'Carat': '0.03 crt  - AAA', 'Category': 'men-ring', 'URL': 'https://www.glamira.com/men-ring/?p=3'}
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=4> (referer: https://www.glamira.com/men-ring/?p=3) ['cached']
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=5> (referer: https://www.glamira.com/men-ring/?p=4) ['cached']
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=6> (referer: https://www.glamira.com/men-ring/?p=5) ['cached']
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=7> (referer: https://www.glamira.com/men-ring/?p=6) ['cached']
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=8> (referer: https://www.glamira.com/men-ring/?p=7) ['cached']
+2024-08-05 18:51:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=9> (referer: https://www.glamira.com/men-ring/?p=8) ['cached']
+2024-08-05 18:51:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.glamira.com/men-ring/?p=9>
+{'PID': "Men's Wedding Ring Classic Spring 4 mm-$1,072.00", 'Product Name': "Men's Wedding Ring Classic Spring 4 mm", 'Image': 'https://cdn-media.glamira.com/media/product/newgeneration/view/3/sku/classic-spring-men/alloycolour/white/width/w4/profile/prA.jpg', 'Price': '$1,072.00', 'Description': '14K White Gold', 'Carat': '0.222 crt  - VS1', 'Category': 'men-ring', 'URL': 'https://www.glamira.com/men-ring/?p=9'}
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=10> (referer: https://www.glamira.com/men-ring/?p=9) ['cached']
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=11> (referer: https://www.glamira.com/men-ring/?p=10) ['cached']
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/aquamarine/> (referer: https://www.glamira.com/)
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=12> (referer: https://www.glamira.com/men-ring/?p=11) ['cached']
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=13> (referer: https://www.glamira.com/men-ring/?p=12) ['cached']
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=14> (referer: https://www.glamira.com/men-ring/?p=13) ['cached']
+2024-08-05 18:51:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=15> (referer: https://www.glamira.com/men-ring/?p=14) ['cached']
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/white-pearl/> (referer: https://www.glamira.com/)
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.glamira.com/eternity/> (referer: https://www.glamira.com/)
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=16> (referer: https://www.glamira.com/men-ring/?p=15) ['cached']
+2024-08-05 18:51:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.glamira.com/eternity/>: HTTP status code is not handled or not allowed
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=17> (referer: https://www.glamira.com/men-ring/?p=16) ['cached']
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=18> (referer: https://www.glamira.com/men-ring/?p=17) ['cached']
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=19> (referer: https://www.glamira.com/men-ring/?p=18) ['cached']
+2024-08-05 18:51:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=20> (referer: https://www.glamira.com/men-ring/?p=19) ['cached']
+2024-08-05 18:51:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=21> (referer: https://www.glamira.com/men-ring/?p=20) ['cached']
+2024-08-05 18:51:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=22> (referer: https://www.glamira.com/men-ring/?p=21) ['cached']
+2024-08-05 18:51:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=23> (referer: https://www.glamira.com/men-ring/?p=22) ['cached']
+2024-08-05 18:51:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=24> (referer: https://www.glamira.com/men-ring/?p=23) ['cached']
+2024-08-05 18:51:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=25> (referer: https://www.glamira.com/men-ring/?p=24) ['cached']
+2024-08-05 18:51:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=26> (referer: https://www.glamira.com/men-ring/?p=25) ['cached']
+2024-08-05 18:51:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=27> (referer: https://www.glamira.com/men-ring/?p=26) ['cached']
+2024-08-05 18:51:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=28> (referer: https://www.glamira.com/men-ring/?p=27) ['cached']
+2024-08-05 18:51:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=29> (referer: https://www.glamira.com/men-ring/?p=28) ['cached']
+2024-08-05 18:51:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=30> (referer: https://www.glamira.com/men-ring/?p=29) ['cached']
+2024-08-05 18:51:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=31> (referer: https://www.glamira.com/men-ring/?p=30) ['cached']
+2024-08-05 18:51:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=32> (referer: https://www.glamira.com/men-ring/?p=31) ['cached']
+2024-08-05 18:51:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=33> (referer: https://www.glamira.com/men-ring/?p=32) ['cached']
+2024-08-05 18:51:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=34> (referer: https://www.glamira.com/men-ring/?p=33) ['cached']
+2024-08-05 18:51:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=35> (referer: https://www.glamira.com/men-ring/?p=34) ['cached']
+2024-08-05 18:51:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=36> (referer: https://www.glamira.com/men-ring/?p=35) ['cached']
+2024-08-05 18:51:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=37> (referer: https://www.glamira.com/men-ring/?p=36) ['cached']
+2024-08-05 18:51:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=38> (referer: https://www.glamira.com/men-ring/?p=37) ['cached']
+2024-08-05 18:51:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=39> (referer: https://www.glamira.com/men-ring/?p=38) ['cached']
+2024-08-05 18:51:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=40> (referer: https://www.glamira.com/men-ring/?p=39) ['cached']
+2024-08-05 18:51:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=41> (referer: https://www.glamira.com/men-ring/?p=40) ['cached']
+2024-08-05 18:51:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=42> (referer: https://www.glamira.com/men-ring/?p=41) ['cached']
+2024-08-05 18:51:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=43> (referer: https://www.glamira.com/men-ring/?p=42) ['cached']
+2024-08-05 18:51:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=44> (referer: https://www.glamira.com/men-ring/?p=43) ['cached']
+2024-08-05 18:51:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=45> (referer: https://www.glamira.com/men-ring/?p=44) ['cached']
+2024-08-05 18:51:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=46> (referer: https://www.glamira.com/men-ring/?p=45) ['cached']
+2024-08-05 18:51:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.glamira.com/men-ring/?p=47> (referer: https://www.glamira.com/men-ring/?p=46) ['cached']
+2024-08-05 18:51:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-08-05 18:51:23 [scrapy.extensions.feedexport] INFO: Stored csv feed (47 items) in: full_products_glamira.csv
+2024-08-05 18:51:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 69762,
+ 'downloader/request_count': 56,
+ 'downloader/request_method_count/GET': 56,
+ 'downloader/response_bytes': 3450751,
+ 'downloader/response_count': 56,
+ 'downloader/response_status_count/200': 55,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 10.480676,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 8, 5, 13, 21, 23, 46417, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 3,
+ 'httpcache/hit': 53,
+ 'httpcache/miss': 3,
+ 'httpcache/store': 3,
+ 'httpcompression/response_bytes': 73321509,
+ 'httpcompression/response_count': 56,
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'item_scraped_count': 47,
+ 'log_count/DEBUG': 105,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 61972480,
+ 'memusage/startup': 61972480,
+ 'request_depth_max': 47,
+ 'response_received_count': 56,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 55,
+ 'scheduler/dequeued/memory': 55,
+ 'scheduler/enqueued': 55,
+ 'scheduler/enqueued/memory': 55,
+ 'start_time': datetime.datetime(2024, 8, 5, 13, 21, 12, 565741, tzinfo=datetime.timezone.utc)}
+2024-08-05 18:51:23 [scrapy.core.engine] INFO: Spider closed (finished)

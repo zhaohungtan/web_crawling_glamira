@@ -1,0 +1,6 @@
+venv/ # This ignores the virtual environment directory
+*.pyc # This ignores compiled Python files
+__pycache__/ # This ignores the __pycache__ directories
+glamirawebscraping/
+*.pyc
+__pycache__/
